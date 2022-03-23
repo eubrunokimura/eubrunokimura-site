@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
                     <div className='container mx-auto flex justify-center text-2xl'>
                         {/* &copy; 2022 eubrunokimura */}
                         <div className="">
-                            <a href="#" class="w-6 mx-1">
+                            <a href="#" className="w-6 mx-1">
                                 <i className="uil uil-facebook-f"></i>
                             </a>
                             <a href="#" className="w-6 mx-1">
