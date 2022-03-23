@@ -7,9 +7,6 @@ date: '2021-09-22'
 tags:
   - nextjs
 ---
-
-# The main content
-
-- 1 [home](./aula/aula-1)
+- 1 [home](/html-basico/aula-1)
 - 2
 - 3

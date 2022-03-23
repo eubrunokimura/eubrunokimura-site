@@ -2,11 +2,12 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import md from 'markdown-it';
 import getAulas from '../../../utils/get-aulas';
+import YoutubeEmbed from '../../../components/YoutubeEmbed'
 
 export async function getStaticPaths() {
 
     const paths = getAulas('aulas')
-    console.log(paths)
+    // console.log(paths)
 
     return {
         paths,
@@ -29,6 +30,10 @@ export default function PostPage({ frontmatter, content }) {
     return (
         <div className='prose mx-auto'>
             <h1>{frontmatter.title}</h1>
+            {frontmatter.videoID !== '' &&
+                <div className='flex justify-center my-10'>
+                    <YoutubeEmbed embedId={frontmatter.videoID}></YoutubeEmbed>
+                </div>}
             <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
         </div>
     );
