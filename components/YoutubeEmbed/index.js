@@ -1,4 +1,4 @@
-// import '.YoutubeEmbed.modules.css'
+import styles from './YoutubeEmbed.module.css'
 import PropTypes from "prop-types";
 
 const YoutubeEmbed = ({ embedId }) => (
