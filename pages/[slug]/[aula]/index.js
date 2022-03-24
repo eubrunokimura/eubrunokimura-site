@@ -28,7 +28,7 @@ export async function getStaticProps({ params: { slug, aula } }) {
 
 export default function PostPage({ frontmatter, content }) {
     return (
-        <div className='prose mx-auto px-5'>
+        <div className='prose mx-auto px-8'>
             <h1>{frontmatter.title}</h1>
             {frontmatter.videoID !== '' &&
                 <div className='flex justify-center my-10'>
