@@ -4,6 +4,7 @@ metaTitle: 'Next.js page options and how they work'
 metaDesc: 'How to use pages in Next.js exploring the options'
 socialImage: images/23-03-2022.jpg
 date: '2021-09-22'
+order: '1'
 tags:
   - nextjs
 ---
